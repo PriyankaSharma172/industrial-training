@@ -5,11 +5,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(express.static("../../ind-train"));
+app.use(express.static("../"));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/userData", {
+mongoose.connect("mongodb://127.0.0.1:27017/priyanka", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
